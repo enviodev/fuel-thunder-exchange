@@ -1,0 +1,35 @@
+enum Side {
+  Buy
+  Sell
+}
+
+type MakerOrder {
+  id: ID!
+  side: Side!
+  maker: String!
+  collection: ID!
+  token_id: ID!
+  price: BigInt!
+  amount: BigInt!
+  nonce: BigInt!
+  strategy: ID!
+  payment_asset: ID!
+  start_time: String!
+  end_time: String!
+}
+
+# type TakerOrder {
+#   side: Side!
+#   taker: Address!
+#   maker: Address!
+#   nonce: BigInt!
+#   price: BigInt!
+#   token_id: SubId!
+#   collection: ID!
+#   strategy: ID!
+# }
+
+type OrderPlaced {
+  id: ID!
+  order: MakerOrder!
+}
