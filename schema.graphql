@@ -18,16 +18,17 @@ type MakerOrder {
   end_time: String!
 }
 
-# type TakerOrder {
-#   side: Side!
-#   taker: Address!
-#   maker: Address!
-#   nonce: BigInt!
-#   price: BigInt!
-#   token_id: SubId!
-#   collection: ID!
-#   strategy: ID!
-# }
+type TakerOrder {
+  id: ID!
+  side: Side!
+  taker: String!
+  maker: String!
+  nonce: BigInt!
+  price: BigInt!
+  token_id: ID!
+  collection: ID!
+  strategy: ID!
+}
 
 type OrderPlaced {
   id: ID!
@@ -37,4 +38,9 @@ type OrderPlaced {
 type OrderUpdated {
   id: ID!
   order: MakerOrder!
+}
+
+type OrderExecuted {
+  id: ID!
+  order: TakerOrder!
 }

@@ -10,5 +10,5 @@ networks:
         events:
           - name: OrderPlaced
           - name: OrderUpdated
-          # - name: OrderExecuted
+          - name: OrderExecuted
           # - name: OrderCanceled
