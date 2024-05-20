@@ -12,8 +12,8 @@ importers:
         specifier: 4.3.10
         version: 4.3.10
       envio:
-        specifier: 0.0.0-fuel-main-20240517144614-aa614294
-        version: 0.0.0-fuel-main-20240517144614-aa614294
+        specifier: 0.0.1-fuel
+        version: 0.0.1-fuel
       ethers:
         specifier: 6.8.0
         version: 6.8.0
@@ -857,28 +857,46 @@ packages:
       once: 1.4.0
     dev: false
 
-  /envio-darwin-arm64@0.0.0-fuel-main-20240517144614-aa614294:
-    resolution: {integrity: sha512-YTRuNAkHAYqvNkfCXLZPSlavGxuAWTOV861ADMtYjMqRysOknRqisyvqcSbw3rN4yHxhZ2kEtr1G4/4wX+9rdA==}
+  /envio-darwin-arm64@0.0.1-fuel:
+    resolution: {integrity: sha512-RFTk437sNklPW7P7eLUKx1e4pazbZVh9ge+vcRl5iHigqIBSLumPp7GRsB75MW08SjxOfIA/UYWqbIVFQbPQOg==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
     dev: false
     optional: true
 
-  /envio-linux-x64@0.0.0-fuel-main-20240517144614-aa614294:
-    resolution: {integrity: sha512-6K6qoAQ8Mqx2Ylba2I9mg5jf0/GsfMWA4xg9v9xeCyQvcdLIc1TQP6oamqCKOEGYwurC+D1Umy9vMARUgu2U7A==}
+  /envio-darwin-x64@0.0.1-fuel:
+    resolution: {integrity: sha512-eSa0Vsz4vVs6nX7NeIxwFOlTeTm2NZjpqXWuKDoIUnFXXgmzY+4/tIluqf0yEcxEtkA9sXgKART5ZhmHsRFihg==}
+    cpu: [x64]
+    os: [darwin]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /envio-linux-arm64@0.0.1-fuel:
+    resolution: {integrity: sha512-Cz1iSnFaNOSYrGoYQ52lgFYUGkUd6JdP/hjnKECNPKavZJHCk9MV4ngkx6kHqdXfDaJuSimtn909KbIuA3VeYA==}
+    cpu: [arm64]
+    os: [linux]
+    requiresBuild: true
+    dev: false
+    optional: true
+
+  /envio-linux-x64@0.0.1-fuel:
+    resolution: {integrity: sha512-oWGPEAhE1tTLW2zDDjySAOkjaIqXvpkKB4rIJNuA8OyplHF8hCVX4dwBgGHuVAvWCd4QlkouXv19zJklfVcuNQ==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
     dev: false
     optional: true
 
-  /envio@0.0.0-fuel-main-20240517144614-aa614294:
-    resolution: {integrity: sha512-U6Y8iGySFTSykEGLL1vpvA4R1xHsTxUK/fJWszV1BRo8AK/4xlGi5CR40+LZIUVcOXo6Wi2s9C62MqBpgJgEYA==}
+  /envio@0.0.1-fuel:
+    resolution: {integrity: sha512-MM2XB97S3GA3y7y/QiWNO8DKrnCnV4qtjKFaFPkHuGJxFZn1VZng/+fdgo3NKViJfvBeEV7vLuBF4PoMwh7XWA==}
     hasBin: true
     optionalDependencies:
-      envio-darwin-arm64: 0.0.0-fuel-main-20240517144614-aa614294
-      envio-linux-x64: 0.0.0-fuel-main-20240517144614-aa614294
+      envio-darwin-arm64: 0.0.1-fuel
+      envio-darwin-x64: 0.0.1-fuel
+      envio-linux-arm64: 0.0.1-fuel
+      envio-linux-x64: 0.0.1-fuel
     dev: false
 
   /es-define-property@1.0.0:
