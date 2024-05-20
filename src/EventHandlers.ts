@@ -82,3 +82,15 @@ ExchangeContract.OrderExecuted.handler(({ event, context }) => {
   });
   context.TakerOrder.set(takerOrder);
 });
+
+ExchangeContract.OrderCanceled.loader(({ event, context }) => {});
+
+ExchangeContract.OrderCanceled.handler(({ event, context }) => {
+  context.OrderCanceled.set({
+    id: nanoid(),
+    user: event.data.user.value,
+    strategy: event.data.strategy.value,
+    side: event.data.side.case,
+    nonce: event.data.nonce,
+  });
+});

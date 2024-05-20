@@ -44,3 +44,11 @@ type OrderExecuted {
   id: ID!
   order: TakerOrder!
 }
+
+type OrderCanceled {
+  id: ID!
+  user: String!
+  strategy: ID!
+  side: Side!
+  nonce: BigInt!
+}

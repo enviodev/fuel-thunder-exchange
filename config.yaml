@@ -11,4 +11,4 @@ networks:
           - name: OrderPlaced
           - name: OrderUpdated
           - name: OrderExecuted
-          # - name: OrderCanceled
+          - name: OrderCanceled
